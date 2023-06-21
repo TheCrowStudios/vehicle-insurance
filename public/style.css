@@ -1,0 +1,77 @@
+body {
+    background-color: #222222;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+}
+
+#company {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #444444;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.formCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    max-width: 800px;
+    margin: auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    text-transform: uppercase;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    accent-color: blue;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    accent-color: blue;
+}
+
+select {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    font-size: large;
+    padding: 5px;
+    background-color: #222222;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    width: 200px;
+    margin: auto;
+}
+
+button:hover {
+    background-color: #444444;
+    cursor: pointer;
+}

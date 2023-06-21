@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Insurance</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 id="title">Vehicle Insurance</h1>
+
+    <div id="company">
+        <h2>Vehicle Insurance Company</h2>
+        <h3>About time to insure your vehicle.</h3>
+    </div>
+
+    <form action="/" method="POST" class="formCenter">
+        <label for="vehicleRegistration">Vehicle registration</label>
+        <div>
+            <input required type="text" name="vehicleRegistration" id="vehicleRegistration">
+        </div>
+
+        <label for="vehicleAge">Vehicle age</label>
+        <div>
+            <input required type="number" min="0" max="100" name="vehicleAge" id="vehicleAge">
+        </div>
+
+        <label for="vehicleRegistered">Vehicle registered</label>
+        <div>
+            <input required type="date" max="<%= (new Date()).toLocaleDateString() %>" name="vehicleRegistered" id="vehicleRegistered">
+        </div>
+
+        <label for="engineSize">Engine size</label>
+        <div>
+            <select required name="engineSize" id="engineSize">
+                <option value="">Select engine size</option>
+                <option value="1">1L</option>
+                <option value="2">2L</option>
+                <option value="3">3L</option>
+                <option value="4">4L</option>
+                <option value="5">5L</option>
+                <option value="6">6L</option>
+                <option value="7">7L</option>
+                <option value="8">8L</option>
+            </select>
+        </div>
+
+        <label for="modified">Has the vehicle been modified?</label>
+        If yes, provide details in the additional information section.
+        <div>
+            <input required type="radio" name="modified" id="modifiedYes">
+            <label for="modifiedYes">Yes</label>
+        </div>
+        <div>
+            <input required type="radio" name="modified" id="modifiedNo">
+            <label for="modifiedNo">No</label>
+        </div>
+
+        <label for="">Select additional insurance</label>
+        <div>
+            <input type="checkbox" name="breakdown" id="breakdown">
+            <label for="breadkdown">Breakdown insurance</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="carKeys" id="carKeys">
+            <label for="carKeys">Car keys insurance</label>
+        </div>
+
+        <textarea name="information" id="information" cols="30" rows="10" placeholder="Any additional information"></textarea>
+
+        <button>Insure</button>
+    </form>
+</body>
+</html>
